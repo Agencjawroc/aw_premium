@@ -5,9 +5,15 @@ fields:
 - type: text
   name: Title
   label: Title
+- name: vimeo_embed_code
+  type: text
+  config:
+    required: false
+  label: VIMEO EMBED CODE
 - type: datetime
   name: date
   label: date
+  default: now
 pages:
 - content/aaby.md
 - content/dddd.md
