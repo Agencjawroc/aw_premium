@@ -11,3 +11,5 @@ fields:
 - type: text
   name: Slug
   label: Slug
+pages:
+- content/aaby.md
