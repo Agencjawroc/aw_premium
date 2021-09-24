@@ -14,6 +14,17 @@ fields:
   name: date
   label: date
   default: now
+- name: contact
+  type: select
+  default: []
+  config:
+    source:
+      type: pages
+      section: contacts
+      file: data/contacts.yml
+      path: ''
+    required: true
+  label: Kontakt
 pages:
 - content/aaby.md
 - content/dddd.md
