@@ -15,3 +15,4 @@ fields:
     "" )) "" }}{{ $random }}'
 pages:
 - content/aaby.md
+- content/zen.md
