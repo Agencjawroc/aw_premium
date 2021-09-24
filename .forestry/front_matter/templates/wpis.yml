@@ -6,7 +6,7 @@ fields:
   name: Title
   label: Title
 - name: vimeo_embed_code
-  type: text
+  type: textarea
   config:
     required: false
   label: VIMEO EMBED CODE

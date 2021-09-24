@@ -8,6 +8,7 @@
         {{ range .Site.Pages }}
             <li>
                 <a href="{{.Permalink}}">{{.Slug}}{{.Title}}</a>
+                {{.Params.vimeo_embed_code | safeHTML}}
             </li>
         {{ end }}
         </main>

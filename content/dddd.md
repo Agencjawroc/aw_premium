@@ -1,6 +1,6 @@
 +++
 Title = "eeee"
 date = ""
-draft = true
+draft = false
 
 +++

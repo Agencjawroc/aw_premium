@@ -7,8 +7,6 @@ languageCode = "pl-PL"
 portraitPhotoWidths = [1500, 1000, 750]
 theme = "sc_aw_premium"
 title = "AW premium"
-[[cascade]]
-slug = '{{ $seed := .Filename }}{{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}{{ $random }}'
 [params]
 description = ""
 email_header = "kontakt@agencjawroclawska.pl"
@@ -17,7 +15,7 @@ landscapePhotoWidths = [3400, 2560, 1920, 1600, 1366, 1200, 992, 786, 560]
 paginatedsections = ["posts"]
 portraitPhotoWidths = [1500, 1000, 750, 500]
 [permalinks]
-"/" = "/:slug/"
+"/" = "/:06/:1/:2/:slug/"
 premium = "/:slug/"
 [sitemap]
 changefreq = "monthly"

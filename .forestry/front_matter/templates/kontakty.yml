@@ -1,0 +1,26 @@
+---
+label: Kontakty
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Tytuł
+- name: imi__i_nazwisko
+  type: text
+  config:
+    required: false
+  label: Imię i nazwisko
+- name: email
+  type: text
+  config:
+    required: false
+  label: E-mail
+- name: telefon
+  type: text
+  config:
+    required: false
+  label: Telefon
+pages:
+- data/contacts/karol.yml
