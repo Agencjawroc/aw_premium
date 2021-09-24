@@ -10,5 +10,6 @@ fields:
   label: date
 pages:
 - content/aaby.md
+- content/dddd.md
 - content/rer.md
 - content/zen.md
