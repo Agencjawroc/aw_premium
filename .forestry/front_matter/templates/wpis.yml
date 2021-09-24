@@ -20,7 +20,7 @@ fields:
   config:
     source:
       type: pages
-      section: contacts
+      section: kontakty
       file: data/contacts.yml
       path: ''
     required: true
