@@ -9,6 +9,14 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: directory
+  path: data/contacts
+  label: Kontakty
+  create: documents
+  match: "/*"
+  new_doc_ext: yml
+  templates:
+  - kontakty
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
