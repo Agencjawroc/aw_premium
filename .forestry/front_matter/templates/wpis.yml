@@ -8,11 +8,6 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: text
-  name: Slug
-  label: Slug
-  default: {{ $seed := .Filename }}{{ $random := delimit (shuffle (split (md5 $seed)
-    "" )) "" }}{{ $random }}
 pages:
 - content/aaby.md
 - content/zen.md
