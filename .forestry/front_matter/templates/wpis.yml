@@ -1,0 +1,13 @@
+---
+label: wpis
+hide_body: true
+fields:
+- type: text
+  name: Title
+  label: Title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: Slug
+  label: Slug
