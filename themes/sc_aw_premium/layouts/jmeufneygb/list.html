@@ -1,0 +1,10 @@
+{{ define "main" }}
+<ul>
+{{ range (where .Site.RegularPages "Type" "page" )}}
+<li>
+    {{.Permalink}} - <a href="{{.Permalink}}">{{.Title}}</a>
+    {{.Params.vimeo_embed_code | safeHTML}}
+</li>
+{{ end }}
+</ul>
+{{end}}

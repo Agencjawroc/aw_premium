@@ -26,9 +26,4 @@ fields:
     required: true
   label: Kontakt
 pages:
-- content/aaby.md
 - content/aqq.md
-- content/dddd.md
-- content/rer.md
-- content/zaluzje.md
-- content/zen.md

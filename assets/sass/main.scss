@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li{
+            display: flex;
+            
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

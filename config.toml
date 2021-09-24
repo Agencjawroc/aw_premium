@@ -1,6 +1,6 @@
 baseURL = "https://premium.agencjawroclawska.pl/"
 canonifyURLs = true
-description = "Hugo port of the Themefisher’s Kross Template"
+description = ""
 enableRobotsTXT = true
 landscapePhotoWidths = [2500, 1500, 1000]
 languageCode = "pl-PL"
