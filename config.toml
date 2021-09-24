@@ -1,0 +1,23 @@
+baseURL = "https://premium.agencjawroclawska.pl/"
+canonifyURLs = true
+description = "Hugo port of the Themefisher’s Kross Template"
+enableRobotsTXT = true
+landscapePhotoWidths = [2500, 1500, 1000]
+languageCode = "pl-PL"
+portraitPhotoWidths = [1500, 1000, 750]
+theme = "sc_aw_premium"
+title = "AW premium"
+[params]
+description = ""
+email_header = "kontakt@agencjawroclawska.pl"
+favico = "/uploads/favicon-aw.png"
+landscapePhotoWidths = [3400, 2560, 1920, 1600, 1366, 1200, 992, 786, 560]
+paginatedsections = ["posts"]
+portraitPhotoWidths = [1500, 1000, 750, 500]
+[permalinks]
+"/" = "/:slug/"
+premium = "/:slug/"
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5

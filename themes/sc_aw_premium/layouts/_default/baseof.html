@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="{{ if .IsHome }} home {{else}} {{ .Params.body_class }} {{ if .IsPage }}single  {{ else }}list{{ end }} {{end}}">
+        {{ $section := "premium" }}
+        <main id="content">
+        {{- block "main" . }}{{- end }}
+        {{ range .Site.Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Slug}}{{.Title}}</a>
+            </li>
+        {{ end }}
+        </main>
+
+    
+        {{- partial "footer.html" . -}}
+        <!-- BEGIN callpage.io widget -->
+<!-- IMPORTANT: Remove script below if you don't need support for older browsers. -->
+
+<!-- END callpage.io widget -->
+    </body>
+</html>
