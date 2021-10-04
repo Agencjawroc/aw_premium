@@ -5,6 +5,9 @@ fields:
 - type: text
   name: Title
   label: Title
+- type: text
+  name: Domena
+  label: Domena
 - name: vimeo_embed_code
   type: textarea
   config:

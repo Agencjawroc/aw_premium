@@ -9,8 +9,8 @@
     <!-- nazwa pliku -->
     {{ $filename := index $pathArr 0}}
 
-    
-    <div><span>Kontakt:</span><span>{{ (index site.Data.contacts $filename).imi__i_nazwisko }}</span></div>
+    <div><span>Domena:</span><span>{{ (index site.Data.contacts $filename).imi__i_nazwisko }}</span></div>
+    <div><span>Doradca SEO:</span><span>{{ (index site.Data.contacts $filename).imi__i_nazwisko }}</span></div>
     <div><span>Telefon:</span><span><a href="tel:{{ (index site.Data.contacts $filename).telefon }}">{{ (index site.Data.contacts $filename).telefon }}</a></span></div>
     <div><span>E-mail:</span><span><a href="mailto:{{ (index site.Data.contacts $filename).email }}">{{ (index site.Data.contacts $filename).email }}</a></span></div>
 </div>
