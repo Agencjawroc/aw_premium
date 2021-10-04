@@ -1,9 +1,23 @@
 {{ define "main" }}
-<ul>
+<ul class="logo-row">
+    <li class="web-adress">www.agencjawroclawska.pl</li>
+    <li class="logo-aw"><img src="\resources\_gen\images\logo-aw-black.jpg" alt="" /></li>
+</ul>
+<ul class="content-list">
 {{ range (where .Site.RegularPages "Type" "page" )}}
 <li>
-    {{.Permalink}} - <a href="{{.Permalink}}">{{.Title}}</a>
-    {{.Params.vimeo_embed_code | safeHTML}}
+    <div>{{.Permalink}} - <a href="{{.Permalink}}">{{.Title}}</a></div>
+    <div class="video-embed">{{.Params.vimeo_embed_code | safeHTML}} </div>
+    <div class="working-hours">
+        <ul class="working-list">
+            <li> <strong>Nasze godziny pracy:</strong></li>
+            <li>Poniedziałek: 	8-16</li>
+            <li>Wtorek: 	8-16 </li>
+            <li>Środa: 	8-16</li>
+            <li>Czwartek: 	8-16</li>
+            <li>Piątek: 	8-16</li>
+        </ul>
+    </div>
 </li>
 {{ end }}
 </ul>
