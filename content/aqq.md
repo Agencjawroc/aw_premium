@@ -1,4 +1,5 @@
 +++
+Domena = "onet.pl"
 Title = "Karol Gucwa"
 contact = "data/contacts/karol.yml"
 date = 2021-09-24T09:05:11Z
