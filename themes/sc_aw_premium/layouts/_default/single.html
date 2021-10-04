@@ -1,5 +1,7 @@
 {{ define "main" }}
-<div class='embed'>
+<ul class="content-list">
+    <li>
+<div class='video-embed'>
     {{.Params.vimeo_embed_code | safeHTML}}
 </div>
 <div class='contact-data'>
@@ -14,4 +16,6 @@
     <div><span>Telefon:</span><span><a href="tel:{{ (index site.Data.contacts $filename).telefon }}">{{ (index site.Data.contacts $filename).telefon }}</a></span></div>
     <div><span>E-mail:</span><span><a href="mailto:{{ (index site.Data.contacts $filename).email }}">{{ (index site.Data.contacts $filename).email }}</a></span></div>
 </div>
+</li>
+</ul>
 {{end}}

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body class="{{ if .IsHome }} home {{else}} {{ .Params.body_class }} {{ if .IsPage }}single  {{ else }}list{{ end }} {{end}}">
-        {{ $section := "premium" }}
+    <body class="aa {{ if .IsHome }} home {{else}} {{ .Params.body_class }} {{ if .IsPage }}single  {{ else }}list{{ end }} {{end}}">
+           {{ $section := "premium" }}
+        <ul class="logo-row">
+            <li class="web-adress">www.agencjawroclawska.pl</li>
+            <li class="logo-aw"><img src="/img/logo-aw-black.jpg" alt="" /></li>
+        </ul>
         <main id="content">
+            
         {{- block "main" . }}{{- end }}
       
         </main>
