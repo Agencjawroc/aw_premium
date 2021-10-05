@@ -4,17 +4,29 @@
 <div class='video-embed'>
     {{.Params.vimeo_embed_code | safeHTML}}
 </div>
-<div class='contact-data'>
-    {{ $dirFile := path.Base .Params.contact }}
-    <!-- sam plik z rozszrzeniem -->
-    {{ $pathArr := split $dirFile "." }}
-    <!-- nazwa pliku -->
-    {{ $filename := index $pathArr 0}}
+<div class="contact-section">
+    <div class='contact-data'>
+        {{ $dirFile := path.Base .Params.contact }}
+        <!-- sam plik z rozszrzeniem -->
+        {{ $pathArr := split $dirFile "." }}
+        <!-- nazwa pliku -->
+        {{ $filename := index $pathArr 0}}
 
-    <div><span>Domena:</span><span>{{ .Params.domena }}</span></div>
-    <div><span>Doradca SEO:</span><span>{{ (index site.Data.contacts $filename).imi__i_nazwisko }}</span></div>
-    <div><span>Telefon:</span><span><a href="tel:{{ (index site.Data.contacts $filename).telefon }}">{{ (index site.Data.contacts $filename).telefon }}</a></span></div>
-    <div><span>E-mail:</span><span><a href="mailto:{{ (index site.Data.contacts $filename).email }}">{{ (index site.Data.contacts $filename).email }}</a></span></div>
+        <div><span>Domena:</span><span>{{ .Params.domena }}</span></div>
+        <div><span>Doradca SEO:</span><span>{{ (index site.Data.contacts $filename).imi__i_nazwisko }}</span></div>
+        <div><span>Telefon:</span><span><a href="tel:{{ (index site.Data.contacts $filename).telefon }}">{{ (index site.Data.contacts $filename).telefon }}</a></span></div>
+        <div><span>E-mail:</span><span><a href="mailto:{{ (index site.Data.contacts $filename).email }}">{{ (index site.Data.contacts $filename).email }}</a></span></div>
+    </div>
+    <div class="working-hours">
+        <ul class="working-list">
+            <li> <strong>Nasze godziny pracy:</strong></li>
+            <li>Poniedziałek: <span class="hours">8-16</span></li>
+            <li>Wtorek: <span class="hours">8-16</span></li>
+            <li>Środa: 	<span class="hours">8-16</span></li>
+            <li>Czwartek: 	<span class="hours">8-16</span></li>
+            <li>Piątek: 	<span class="hours">8-16</span></li>
+        </ul>
+    </div>
 </div>
 </li>
 </ul>
