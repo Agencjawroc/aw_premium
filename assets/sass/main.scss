@@ -45,10 +45,10 @@ ul{
         }
     }
 }
-.vp-center div {
+.player {
     position: relative;
 }
-.vp-center div::before {
+.player::before {
     content: '';
     position: absolute;
     width: 70%;
