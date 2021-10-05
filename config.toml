@@ -1,4 +1,4 @@
-baseURL = "https://premium.agencjawroclawska.pl/"
+baseURL = "https://awpremium.onrender.com"
 canonifyURLs = true
 description = ""
 enableRobotsTXT = true
