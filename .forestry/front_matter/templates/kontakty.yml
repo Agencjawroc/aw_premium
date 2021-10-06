@@ -24,4 +24,5 @@ fields:
   label: Telefon
 pages:
 - data/contacts/bartek.yml
+- data/contacts/jakub.yml
 - data/contacts/karol.yml
