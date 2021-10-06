@@ -8,7 +8,7 @@
             <li class="logo-aw"><img src="/img/logo-aw-black.svg" alt="" /></li>
         </ul>
         <ul class="under-main-line">
-            <li class="web-adress-small">www.xxx.pl</li>
+            <li class="web-adress-small">{{ if .IsPage }}{{ .Params.domena }} {{else}}www.xxx.pl{{end}}</li>
             <li class="claim">Lepsze SEO</li>
         </ul>
         <main id="content">
