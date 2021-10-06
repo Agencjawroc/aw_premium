@@ -23,4 +23,5 @@ fields:
     required: false
   label: Telefon
 pages:
+- data/contacts/bartek.yml
 - data/contacts/karol.yml
