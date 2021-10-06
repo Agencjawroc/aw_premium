@@ -29,5 +29,6 @@ fields:
     required: true
   label: Kontakt
 pages:
+- content/XD.md
 - content/XYZ.md
 - content/aqq.md
