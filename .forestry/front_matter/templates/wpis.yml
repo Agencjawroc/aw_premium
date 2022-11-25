@@ -28,6 +28,11 @@ fields:
       path: ''
     required: true
   label: Kontakt
+- name: slug
+  type: text
+  config:
+    required: false
+  label: slug
 pages:
 - content/XD.md
 - content/XYZ.md
